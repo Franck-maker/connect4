@@ -1,22 +1,17 @@
 import React from 'react'
+import '../Game.css';
 
-const onClick =(ev,id) => {      // learn how to pass one or more parameters into a react event
-    debugger;
+const onClick =(ev,id) => {     
+    
     alert('on Click' + id);
 }
-const GameCircle = ({id, color, children}) => {
-    const style= {
-        backgroundColor: color,
-        width: 100,
-        height: 100,
-        margin: 10,
-        borderRadius:'50%'
-    }
-    console.log(id);
+const GameCircle = ({id, children}) => {
+   
     return (
-        <div style={style} onClick={(ev) => onClick(id, ev)}>  
+        <div className= {`gameCircle ${id % 2 === 0 ? "odd" :"even"}`} onClick={(ev) => onClick(id, ev)}>  
             {children}
         </div>
+       
     )
 }
 
