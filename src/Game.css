@@ -1,3 +1,71 @@
+body{
+    background-color: aquamarine;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+
+.app-container{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    margin-left: -400px;
+
+}
+.panel {
+    position : absolute;
+    background-color: aqua;
+    border: 8px solid rgb(214, 225, 96);
+    -webkit-box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
+    box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
+    z-index : 1;
+}
+
+.header{
+    left: 50%;
+    top: 90px;
+    height: 80px;
+    width: 300px;
+    margin-left: -120px;
+}
+
+.header-text{
+    font-size: 30px;
+    font-weight: bold ;
+    width: 200px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.footer{
+    left: 50%;
+    top: 750px;
+    height: 80px;
+    width: 300px;
+    margin-left: -120px;
+}
+
+.footer button{
+    position: relative;
+    left: 50%;
+    top: 20%;
+    margin-left: -125px;
+    height: 50px;
+    width: 250px;
+    background-color: aqua;
+    font-size: 30px;
+    -webkit-box-shadow: 3px 5px 10px 2px rgba(0, 0, 0, 0.9);
+    box-shadow: 3px 5px 10px 2px rgba(0, 0, 0, 0.9);
+    border: 5px solid rgb(214, 225, 96);
+    font-weight: bold;
+
+}
+
 .gameBoard{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
@@ -7,7 +75,12 @@
     position: absolute;
     left:50%;
     margin-left:-250px;
-    top:20%
+    top:20%;
+    background-color: yellow;
+    border: 8px solid rgb(214, 225, 96);
+    border-radius: 8%;
+    -webkit-box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
+    box-shadow: 7px 5px 15px 3px rgba(0, 0, 0, 0.9);
 
 }
 
@@ -16,14 +89,20 @@
     height: 100px;
     margin: 10px;
     border-radius:50%;
+    border: 5px solid black
 }
 
-.odd{
-    background-color: red;
+.player_0{
+    background-color: white;
  
 }
 
-.even{
-    background-color: blue;
+.player_1{
+    background-color: green;
+ 
+}
+
+.player_2{
+    background-color: red;
  
 }
